@@ -101,7 +101,7 @@ export const appRouter = [
       }, {
         path: 'ddledit',
         name: 'ddledit',
-        title: '表结构修改',
+        title: '结构变更',
         'icon': 'compose',
         component: resolve => {
           require(['./components/Order/GenSQL.vue'], resolve)
@@ -109,7 +109,7 @@ export const appRouter = [
       }, {
         path: 'indexedit',
         name: 'indexedit',
-        title: '索引修改',
+        title: '索引变更',
         'icon': 'share',
         component: resolve => {
           require(['./components/Order/GenIndex.vue'], resolve)
@@ -117,7 +117,7 @@ export const appRouter = [
       }, {
         path: 'dmledit',
         name: 'dmledit',
-        title: 'SQL语句提交',
+        title: 'SQL提交',
         'icon': 'code',
         component: resolve => {
           require(['./components/Order/SQLsyntax.vue'], resolve)
@@ -134,7 +134,7 @@ export const appRouter = [
       {
         path: 'view-dml',
         name: 'view-dml',
-        title: '数据库字典',
+        title: '数据字典',
         'icon': 'ios-book',
         component: resolve => {
           require(['./components/Search/DataBaseDic.vue'], resolve)
@@ -161,7 +161,7 @@ export const appRouter = [
       {
         path: 'management-user',
         name: 'management-user',
-        title: '用户',
+        title: '用户管理',
         'icon': 'person-stalker',
         component: resolve => {
           require(['./components/Management/UserInfo.vue'], resolve)
@@ -169,7 +169,7 @@ export const appRouter = [
       }, {
         path: 'management-database',
         name: 'management-database',
-        title: '数据库',
+        title: '实例管理',
         'icon': 'social-buffer',
         component: resolve => {
           require(['./components/Management/MamagementBase.vue'], resolve)
@@ -177,7 +177,7 @@ export const appRouter = [
       }, {
         path: 'management-audit',
         name: 'managerment-audit',
-        title: '审核',
+        title: 'SQL审批',
         'icon': 'edit',
         component: resolve => {
           require(['./components/Management/AuditSql.vue'], resolve)
