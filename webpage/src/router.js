@@ -128,7 +128,7 @@ export const appRouter = [
     path: '/view',
     icon: 'search',
     name: 'view',
-    title: '查看',
+    title: '功能类型',
     component: Index,
     children: [
       {
