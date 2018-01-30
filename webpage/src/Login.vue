@@ -36,7 +36,7 @@
         <Form-item style="width: 100%">
           <Button type="primary" @click="authdata()" style="width: 100%" size="large">登录</Button>
           <p style="margin-left: 22%;margin-top: 2%">如需注册账号请联系平台管理员</p>
-          <p style="margin-left: 5%;">2018 © Power By Cookie.Ye 使用chrome获得最佳体验</p>
+          <p style="margin-left: 5%;">©2018 Yearing-SQL审核 使用chrome获得最佳体验</p>
         </Form-item>
       </Form>
         </TabPane>
@@ -53,7 +53,7 @@
             <Form-item style="width: 100%">
               <Button type="primary" @click="ldap_login()" style="width: 100%" size="large">登录</Button>
               <p style="margin-left: 22%;margin-top: 2%">如需注册账号请联系平台管理员</p>
-              <p style="margin-left: 5%;">2018 © Power By Cookie.Ye 使用chrome获得最佳体验</p>
+              <p style="margin-left: 5%;">©2018 Yearing-SQL审核 使用chrome获得最佳体验</p>
             </Form-item>
           </Form>
         </TabPane>
