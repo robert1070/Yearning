@@ -90,15 +90,7 @@ export const appRouter = [
     title: '任务类型',
     component: Index,
     children: [
-      {
-        path: 'myorder',
-        name: 'myorder',
-        title: '我的工单',
-        'icon': 'person',
-        component: resolve => {
-          require(['./components/Order/MyOrder.vue'], resolve)
-        }
-      }, {
+    {
         path: 'ddledit',
         name: 'ddledit',
         title: '结构变更',
@@ -121,6 +113,14 @@ export const appRouter = [
         'icon': 'code',
         component: resolve => {
           require(['./components/Order/SQLsyntax.vue'], resolve)
+        }
+      }, {
+        path: 'indexedit',
+        name: 'indexedit',
+        title: '索引变更',
+        'icon': 'share',
+        component: resolve => {
+          require(['./components/Order/GenIndex.vue'], resolve)
         }
       }
     ]
@@ -212,12 +212,33 @@ export const orderList = {
       }
     }
   ]
-};
-export const MainRoute = [
+}
+
+export const myorder = {
+  path: '/',
+  icon: 'home',
+  name: 'main',
+  title: '首页',
+  component: Index,
+  redirect: '/home',
+  children: [
+    {
+      path: 'myorder',
+      name: 'myorder',
+      title: '我的工单',
+      'icon': 'person',
+      component: resolve => {
+        require(['./components/Order/MyOrder.vue'], resolve)
+      }
+    }
+  ]
+}
+  export const MainRoute = [
   loginRouter,
   locking,
   ...appRouter,
   orderList,
+  myorder,
   page404,
   page401,
   page500
